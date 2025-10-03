@@ -2,8 +2,10 @@ import { Outlet, useLocation } from "react-router-dom";
 
 // import Footer from "../components/Footer";
 // import ProgressBar from "../components/ProgressBar";
-import Navbar from "../components/navbar";
+// import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+// import Navbar from "../components/NavBar";
 
 export default function MainLayout() {
   const location = useLocation();
@@ -18,7 +20,7 @@ export default function MainLayout() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar></Navbar>
+      <NavBar></NavBar>
       {/* {showProgress && <ProgressBar />} */}
       <main className="flex-1 pt-2 ">
         <Outlet />

@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar.jsx";
+// import NavBar from "../components/NavBar.jsx";
 
 
 export default function MainLayout() {
@@ -18,7 +18,7 @@ export default function MainLayout() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <NavBar></NavBar>
+ 
       {/* {showProgress && <ProgressBar />} */}
       <main className="flex-1 pt-2 ">
         <Outlet />
